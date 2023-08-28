@@ -135,4 +135,48 @@ color:var(--white);
  .row:nth-child(4) .badge b{
   color: var(--cobalt-blue);
  }
- .b
+ .badge{
+  display:flex;
+  align-items: center;
+  gap: .5rem;
+ }
+
+ .btn{
+  margin-top: auto;
+  padding: 1rem;
+border: none;
+border-radius: 2rem;
+background: var(--dark-gray-blue); 
+cursor:pointer;
+font-size: 1rem;
+color:white;
+ }
+ .btn:hover{
+  background: linear-gradient(to bottom, var(--light-slate-blue-background), var(--light-royal-blue-background));
+ }
+
+ @media screen and (max-width: 768px) {
+  .body{
+   align-items: flex-start;
+   background-color: white;
+  }
+  .card{
+    box-shadow: none;
+  }
+  .card-container{
+    flex-direction: column;
+  }
+  .result{
+    border-radius: 0 0 0  1rem 1rem;
+    width: 100%;
+  }
+
+  .result .info{
+    width: 250px;
+  }
+
+  .summary{
+    width: 100%;
+  }
+  
+ }
